@@ -1,16 +1,23 @@
 #Imports
-import tkinter as tk
+from tkinter import *
+from tkinter import messagebox
 
 #Window
-window = tk.Tk()
-window.title("Hello world")
+window = Tk()
+window.title("Tkinter Project")
 window.geometry("300x300")
 
+#Functions
+def HelloEO():
+  messagebox.showinfo("BF", "Hello whoever u R!")
+
 #Adjustments
-hello = tk.Label(text="Hello world!")
-hello.pack()
-button = tk.Button(text="Click me!")
+HGit = Label(text="Hello Github Community!")
+HGit.pack()
+HRpl = Label(text="Hello Replit Commuinty!")
+HRpl.pack()
+button = Button(text="Click me!", command = HelloEO)
 button.pack()
 
 #Mainloop
-tk.mainloop()
+mainloop()
